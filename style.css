@@ -1,15 +1,19 @@
 :root {
-    --primary: #d4a373; /* Gold/Beige */
+    --primary: #d4a373;
+    /* Gold/Beige */
     --primary-dark: #b08d55;
-    --secondary: #2c3e50; /* Deep Charcoal */
-    --accent: #e0b0b0; /* Rose Gold */
-    --light: #fdfbf7; /* Off-white background */
+    --secondary: #2c3e50;
+    /* Deep Charcoal */
+    --accent: #e0b0b0;
+    /* Rose Gold */
+    --light: #fdfbf7;
+    /* Off-white background */
     --white: #ffffff;
     --text: #4a4a4a;
     --light-gray: #f4f4f4;
-    --shadow: 0 4px 6px rgba(0,0,0,0.05);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
-    
+
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
 }
@@ -33,7 +37,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--secondary);
     font-weight: 700;
@@ -132,6 +141,11 @@ header {
     align-items: center;
 }
 
+
+header .container {
+    max-width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -176,7 +190,7 @@ nav {
 /* --- Hero Section --- */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/hero-bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/hero-bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -184,7 +198,7 @@ nav {
     align-items: center;
     text-align: center;
     color: var(--white);
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 .hero-content {
@@ -196,7 +210,7 @@ nav {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: var(--white);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -223,7 +237,7 @@ nav {
 
 .about-img img {
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-img::before {
@@ -261,7 +275,7 @@ nav {
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
@@ -310,9 +324,17 @@ nav {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* --- Footer --- */
@@ -349,7 +371,7 @@ footer {
 
 .copyright {
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     font-size: 0.8rem;
     color: #999;
@@ -366,26 +388,26 @@ footer {
         width: 100%;
         background-color: var(--white);
         padding: 20px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
         text-align: center;
     }
-    
+
     .nav-links.active {
         display: flex;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
