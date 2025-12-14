@@ -129,6 +129,7 @@ img {
 }
 
 /* --- Header --- */
+
 header {
     background-color: var(--white);
     box-shadow: var(--shadow);
@@ -136,14 +137,18 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
+    padding: 10px 0;
     display: flex;
     align-items: center;
 }
 
-
 header .container {
+    width: 100%;
     max-width: 100%;
+    padding: 0 40px;
+    /* Slight padding for aesthetics */
 }
 
 nav {
@@ -154,7 +159,8 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 85px;
+    mix-blend-mode: multiply;
 }
 
 .nav-links {
